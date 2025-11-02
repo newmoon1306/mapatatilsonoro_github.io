@@ -15,7 +15,7 @@
 
     /* Seção "Quem Somos" */
     #quem-somos {
-      background:#8A2BE2;
+      background:#DCDCDC;
       padding:3rem 1rem;
       margin-top:2rem;
       border-radius:12px;
@@ -44,17 +44,43 @@
       display:flex;
       flex-wrap:wrap;
       justify-content:center;
-      gap:1.5rem;
+      gap:2rem;
+      margin-top:1.5rem;
     }
-    .imagens img {
-      width:35%;
+    .img-card {
+      width:42%;
       max-width:480px;
-      height:auto;
-      border-radius:12px;
+      min-width:300px;
+      border-radius:14px;
       box-shadow:0 6px 18px rgba(0,0,0,0.12);
-      transition:transform .25s ease;
+      overflow:hidden;
+      background:white;
+      transition:transform 0.3s ease, box-shadow 0.3s ease;
+      text-align:center;
     }
-    .imagens img:hover { transform:scale(1.03); }
+    .img-card:hover {
+      transform:scale(1.03);
+      box-shadow:0 8px 24px rgba(0,0,0,0.15);
+    }
+    .img-card img {
+      width:100%;
+      height:380px;
+      object-fit:cover;
+      display:block;
+    }
+    .img-card p {
+      margin:0;
+      padding:0.75rem;
+      font-size:1rem;
+      font-weight:500;
+      background:#f1f1f1;
+      color:#0f172a;
+      border-top:1px solid #ddd;
+    }
+    @media (max-width:768px) {
+      .img-card { width:90%; }
+      .img-card img { height:320px; }
+    }
 
     /* Links e botões */
     .links-media ul { list-style:none; padding:0; }
@@ -89,6 +115,7 @@
 <body>
   <header>
     <h1>Mapa Tátil Sonoro</h1>
+    
   </header>
 
   <!-- Seção Quem Somos -->
@@ -127,8 +154,14 @@
   <section>
     <h2 style="text-align:center; color:#0f172a;">Imagens do Protótipo</h2>
     <div class="imagens">
-      <img src="foto_mapa.jpg" alt="Protótipo do mapa tátil sonoro – vista geral">
-      <img src="foto_mapa_2.jpg" alt="Detalhe do mapa tátil sonoro – botões sonoros e braille">
+      <div class="img-card">
+        <img src="foto_mapa.jpg" alt="Protótipo do mapa tátil sonoro – vista geral">
+        <p>Vista geral do mapa tátil sonoro instalado no CETENS/UFRB</p>
+      </div>
+      <div class="img-card">
+        <img src="foto_mapa_2.jpg" alt="Detalhe do mapa tátil sonoro – botões sonoros e braille">
+        <p>Detalhe dos botões e das legendas em braille no mapa</p>
+      </div>
     </div>
   </section>
 
