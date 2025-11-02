@@ -53,8 +53,10 @@
   <section>
     <h2>Artigo / Relatório para Download</h2>
     <div class="download">
-      <a href="docs/relatorio_mapa_tatil_sonoro.pdf" target="_blank">📄 Visualizar relatório</a>
-      <a href="docs/relatorio_mapa_tatil_sonoro.pdf" download>⬇️ Baixar relatório</a>
+      <a href="Artigo_mapatatilsonoro 2.pdf" target="_blank">📄 Visualizar relatório</a>
+      <a href="Artigo_mapatatilsonoro 2.pdf" download>⬇️ Baixar relatório</a>
+      <a href="Mapa_tatil_semana-eng.pdf" target="_blank">📄 Visualizar relatório</a>
+      <a href="Mapa_tatil_semana-eng.pdf" download>⬇️ Baixar relatório</a>
     </div>
   </section>
 
