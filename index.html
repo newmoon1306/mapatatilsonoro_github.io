@@ -7,96 +7,162 @@
   <title>Mapa Tátil Sonoro – UFRB / CETENS</title>
   <style>
     body { font-family:'Segoe UI', Arial, sans-serif; margin:0; background:#f8fafc; color:#1e293b; }
-    header { background:#8A2BE2; color:#fff; text-align:center; padding:2rem 1rem; }
-    header p { margin:0.5rem auto; max-width:600px; opacity:0.9; }
-    section { padding:2rem 1rem; max-width:1100px; margin:0 auto; }
-    .imagens { display:grid; grid-template-columns:repeat(auto-fit, minmax(320px,1fr)); gap:1.5rem; }
-    .imagens img { width:100%; border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.12); }
+    header { background:#8A2BE2; color:#fff; text-align:center; padding:2.5rem 1rem 3rem; }
+    header h1 { margin:0; font-size:2rem; }
+    header p { margin:0.75rem auto; max-width:600px; opacity:0.9; }
+
+    section { padding:3rem 1rem; max-width:1100px; margin:0 auto; }
+
+    /* Seção "Quem Somos" */
+    #quem-somos {
+      background:#e6eef8;
+      padding:3rem 1rem;
+      margin-top:2rem;
+      border-radius:12px;
+      box-shadow:0 6px 18px rgba(0,0,0,0.06);
+    }
+    #quem-somos h2 {
+      color:#0f172a;
+      font-size:1.8rem;
+      text-align:center;
+      margin-bottom:1.8rem;
+    }
+    #quem-somos div {
+      background:white;
+      padding:1.8rem 2rem;
+      border-radius:12px;
+      box-shadow:0 6px 18px rgba(0,0,0,0.08);
+      max-width:850px;
+      margin:0 auto;
+      text-align:justify;
+      line-height:1.7;
+      font-size:1.05rem;
+    }
+
+    /* Imagens */
+    .imagens {
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:1.5rem;
+    }
+    .imagens img {
+      width:45%;
+      max-width:480px;
+      height:auto;
+      border-radius:12px;
+      box-shadow:0 6px 18px rgba(0,0,0,0.12);
+      transition:transform .25s ease;
+    }
+    .imagens img:hover { transform:scale(1.03); }
+
+    /* Links e botões */
     .links-media ul { list-style:none; padding:0; }
     .links-media li { margin:0.75rem 0; }
     .links-media a { color:#0b5ed7; text-decoration:none; font-weight:600; }
     .links-media a:hover { text-decoration:underline; }
+
     .download { text-align:center; }
-    .download a { display:inline-block; margin:0.5rem; padding:0.75rem 1.5rem; background:#0b5ed7; color:#fff; border-radius:8px; text-decoration:none; font-weight:600; }
-    .download a:hover { background:#084298; }
-    footer { text-align:center; padding:1rem; background:#0f172a; color:#fff; margin-top:2rem; }
+    .download a {
+      display:inline-block;
+      margin:0.5rem;
+      padding:0.75rem 1.5rem;
+      background:#8A2BE2;
+      color:#fff;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:600;
+      transition:background 0.25s;
+    }
+    .download a:hover { background:#6b21a8; }
+
+    footer {
+      text-align:center;
+      padding:1.5rem;
+      background:#0f172a;
+      color:#fff;
+      margin-top:2rem;
+    }
   </style>
 </head>
-<body>
 
+<body>
   <header>
     <h1>Mapa Tátil Sonoro</h1>
-    <p>Projeto de acessibilidade desenvolvido por estudantes da UFRB/CETENS – campus de Feira de Santana. O protótipo combina relevo tátil, braille e áudio para orientar pessoas com deficiência visual.</p>
+    <p>Projeto de acessibilidade desenvolvido por estudantes do CETENS/UFRB, unindo tecnologia, braille e áudio para promover autonomia a pessoas com deficiência visual.</p>
   </header>
-  <section id="quem-somos" style="background:#e6eef8; padding:2rem 1rem; text-align:center;">
-  <h2 style="color:#0f172a; font-size:1.8rem;">Quem Somos</h2>
-  <div style="max-width:850px; margin:0 auto; text-align:justify; font-size:1.05rem; line-height:1.6; color:#1e293b;">
-    <p>
-      Nós, <strong>Bruna Porto, Vitória Gomes, Gabriel Matos, David Eloy</strong> e <strong>Lisandra Silva</strong>,
-      somos graduandos do curso <strong>Bacharelado Interdisciplinar em Energia e Sustentabilidade (BES)</strong> da 
-      <strong>Universidade Federal do Recôncavo da Bahia (UFRB)</strong>.
-    </p>
 
-    <p>
-      Desenvolvemos com empenho e dedicação o <strong>Mapa Tátil Sonoro</strong> do <strong>CETENS/UFRB</strong>,
-      um protótipo que integra relevo tátil, braille e recursos sonoros para promover
-      acessibilidade e autonomia a pessoas com deficiência visual.
-    </p>
+  <!-- Seção Quem Somos -->
+  <section id="quem-somos">
+    <h2>Quem Somos</h2>
+    <div>
+      <p>
+        Nós, <strong>Bruna Porto, Vitória Gomes, Gabriel Matos, David Eloy</strong> e <strong>Lisandra Silva</strong>,
+        somos graduandos do curso <strong>Bacharelado Interdisciplinar em Energia e Sustentabilidade (BES)</strong> da 
+        <strong>Universidade Federal do Recôncavo da Bahia (UFRB)</strong>.
+      </p>
 
-    <p>
-      O projeto conquistou <strong>destaque nacional</strong> ao ser apresentado no
-      <em>Congresso Brasileiro de Tecnologia Assistiva (CBTA)</em> e divulgado em veículos
-      como o <strong>G1</strong>, <strong>Acorda Cidade</strong>, <strong>Feira Hoje</strong> e o portal da <strong>UFRB</strong>.
-      Essa visibilidade reforça o compromisso do grupo com a inovação, a inclusão e a sustentabilidade.
-    </p>
+      <p>
+        Desenvolvemos com empenho e dedicação o <strong>Mapa Tátil Sonoro</strong> do <strong>CETENS/UFRB</strong>,
+        um protótipo que integra relevo tátil, braille e recursos sonoros para promover
+        acessibilidade e autonomia a pessoas com deficiência visual.
+      </p>
 
-    <p>
-      Atualmente, o time segue desenvolvendo novas versões do mapa, com melhorias voltadas à eficiência energética
-      e à autonomia do sistema, integrando <strong>bateria recarregável</strong>, <strong>placa fotovoltaica</strong> e
-      <strong>sensor de energia inteligente</strong>. O objetivo é tornar o mapa ainda mais sustentável e portátil,
-      ampliando o alcance da tecnologia assistiva dentro e fora da universidade.
-    </p>
-  </div>
-</section>
+      <p>
+        O projeto conquistou <strong>destaque nacional</strong> ao ser apresentado no
+        <em>Congresso Brasileiro de Tecnologia Assistiva (CBTA)</em> e divulgado em veículos
+        como o <strong>G1</strong>, <strong>Acorda Cidade</strong>, <strong>Feira Hoje</strong> e o portal da <strong>UFRB</strong>.
+        Essa visibilidade reforça o compromisso do grupo com a inovação, a inclusão e a sustentabilidade.
+      </p>
 
+      <p>
+        Atualmente, o time segue desenvolvendo novas versões do mapa, com melhorias voltadas à eficiência energética
+        e à autonomia do sistema, integrando <strong>bateria recarregável</strong>, <strong>placa fotovoltaica</strong> e
+        <strong>sensor de energia inteligente</strong>. O objetivo é tornar o mapa ainda mais sustentável e portátil,
+        ampliando o alcance da tecnologia assistiva dentro e fora da universidade.
+      </p>
+    </div>
+  </section>
 
+  <!-- Seção Imagens -->
   <section>
-    <h2>Imagens do Protótipo</h2>
+    <h2 style="text-align:center; color:#0f172a;">Imagens do Protótipo</h2>
     <div class="imagens">
       <img src="foto_mapa.jpg" alt="Protótipo do mapa tátil sonoro – vista geral">
       <img src="foto_mapa_2.jpg" alt="Detalhe do mapa tátil sonoro – botões sonoros e braille">
     </div>
   </section>
 
+  <!-- Reportagens -->
   <section>
-    <h2>Reportagens & Vídeos</h2>
-    <div class="links-media">
+    <h2 style="text-align:center; color:#0f172a;">Reportagens & Vídeos</h2>
+    <div class="links-media" style="max-width:800px; margin:0 auto;">
       <ul>
-        <li><a href="https://ufrb.edu.br/portal/noticias/7710-estudantes-da-ufrb-desenvolvem-mapa-tatil-sonoro-do-campus-de-feira-de-santana" target="_blank">Estudantes da UFRB desenvolvem mapa tátil sonoro do campus de Feira de Santana</a></li>
-        <li><a href="https://www.instagram.com/p/DODsxfrDlhn/?igsh=MWFvam9nZjhhd3J4Yg==" target="_blank">Instagram – Post do protótipo (Parte 1)</a></li>
-        <li><a href="https://feirahoje.com.br/mapa-tatil-sonoro-ufrb-feira/?fbclid=PAVERTVgMid51leHRuA2FlbQIxMAABp9Mij3mQvUygZ2QPG8eRTfieSAX68MsZP9gqw7dn1pwfJ8mmbIui_kjQsy_aem_gMuedCVBNbTxpeUOVKHvdA" target="_blank">Feira Hoje – Reportagem “Mapa Tátil Sonoro UFRB Feira”</a></li>
-        <li><a href="https://www.acordacidade.com.br/feira-de-santana/mapa-tatil-sonoro-criado-por-estudantes-da-ufrb-ganha-destaque-em-congresso-nacional-de-tecnologia-assistiva/" target="_blank">Acorda Cidade – “Mapa Tátil Sonoro criado por estudantes da UFRB ganha destaque…”</a></li>
-        <li><a href="https://www.instagram.com/reel/DOOrQYcjaow/?igsh=MXBpOGtwbzY0djZndg==" target="_blank">Instagram – Reel sobre o projeto</a></li>
-        <li><a href="https://www.youtube.com/live/belwRD74xIA?si=W_ZGy7rZSKYqfiHF" target="_blank">YouTube – Vídeo ao vivo sobre o projeto</a></li>
+        <li><a href="https://ufrb.edu.br/portal/noticias/7710-estudantes-da-ufrb-desenvolvem-mapa-tatil-sonoro-do-campus-de-feira-de-santana" target="_blank">📖 Estudantes da UFRB desenvolvem mapa tátil sonoro do campus de Feira de Santana</a></li>
+        <li><a href="https://www.instagram.com/p/DODsxfrDlhn/?igsh=MWFvam9nZjhhd3J4Yg==" target="_blank">📸 Instagram – Post do protótipo (Parte 1)</a></li>
+        <li><a href="https://feirahoje.com.br/mapa-tatil-sonoro-ufrb-feira/?fbclid=PAVERTVgMid51leHRuA2FlbQIxMAABp9Mij3mQvUygZ2QPG8eRTfieSAX68MsZP9gqw7dn1pwfJ8mmbIui_kjQsy_aem_gMuedCVBNbTxpeUOVKHvdA" target="_blank">📰 Feira Hoje – Reportagem “Mapa Tátil Sonoro UFRB Feira”</a></li>
+        <li><a href="https://www.acordacidade.com.br/feira-de-santana/mapa-tatil-sonoro-criado-por-estudantes-da-ufrb-ganha-destaque-em-congresso-nacional-de-tecnologia-assistiva/" target="_blank">📰 Acorda Cidade – “Mapa Tátil Sonoro criado por estudantes da UFRB ganha destaque…”</a></li>
+        <li><a href="https://www.instagram.com/reel/DOOrQYcjaow/?igsh=MXBpOGtwbzY0djZndg==" target="_blank">🎥 Instagram – Reel sobre o projeto</a></li>
+        <li><a href="https://www.youtube.com/live/belwRD74xIA?si=W_ZGy7rZSKYqfiHF" target="_blank">▶️ YouTube – Vídeo ao vivo sobre o projeto</a></li>
       </ul>
     </div>
   </section>
 
+  <!-- Artigos -->
   <section>
-    <h2>Artigos e Resumos Publicados</h2>
+    <h2 style="text-align:center; color:#0f172a;">Artigos e Resumos Publicados</h2>
     <div class="download">
       <a href="Artigo_mapatatilsonoro 2.pdf" target="_blank">📄 Visualizar Artigo 5CBTA</a>
-      <a href="Artigo_mapatatilsonoro 2.pdf" download>⬇️ BaixarArtigo 5CBTA</a>
+      <a href="Artigo_mapatatilsonoro 2.pdf" download>⬇️ Baixar Artigo 5CBTA</a>
       <a href="Mapa_tatil_semana-eng.pdf" target="_blank">📄 Visualizar Resumo Reconcitec</a>
-      <a href="Mapa_tatil_semana-eng.pdf" download>⬇️ Baixar Banner Reconcitec 2025</a>
+      <a href="Mapa_tatil_semana-eng.pdf" download>⬇️ Baixar Resumo Reconcitec</a>
       <a href="Banner_mapa.pdf" target="_blank">📄 Visualizar Banner Reconcitec 2025</a>
-      <a href="Banner_mapa.pdf" download>⬇️ Baixar Resumo Reconcitec</a>
+      <a href="Banner_mapa.pdf" download>⬇️ Baixar Banner Reconcitec 2025</a>
     </div>
   </section>
 
   <footer>
-    © 2025 – Lisandra Silva Conceição | UFRB / CETENS  
+    © 2025 – Equipe Mapa Tátil | UFRB / CETENS  
   </footer>
-
 </body>
 </html>
